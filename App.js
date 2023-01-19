@@ -1,35 +1,35 @@
-
 import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import bemVindo from '../src/screens/bemVindo'
-import telaCadastro from '../src/screens/telaCadastro'
-import telaLogin from '../src/screens/telaLogin'
+import BemVindo from './src/screens/BemVindo/BemVindo.js'
+import TelaCadastro from './src/screens/TelaCadastro/TelaCadastro.js'
+import TelaLogin from './src/screens/TelaLogin/TelaLogin.js'
 
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-  
+  <NavigationContainer>
       <Stack.Navigator>
       <Stack.Screen
             name="bemVindo"
-            component={bemVindo}
+            component={BemVindo}
             />
              <Stack.Screen
             name="telaCadastro"
-            component={telaCadastro}
+            component={TelaCadastro}
             />
              <Stack.Screen
             name="telaLogin"
-            component={telaLogin}
+            component={TelaLogin}
             />
       </Stack.Navigator>
+      </NavigationContainer>
     
   );
 }
-
 
 
 
