@@ -14,15 +14,15 @@ export default function App() {
   <NavigationContainer>
       <Stack.Navigator>
       <Stack.Screen
-            name="bemVindo"
+            name="BemVindo"
             component={BemVindo}
             />
              <Stack.Screen
-            name="telaCadastro"
+            name="TelaCadastro"
             component={TelaCadastro}
             />
              <Stack.Screen
-            name="telaLogin"
+            name="TelaLogin"
             component={TelaLogin}
             />
       </Stack.Navigator>
